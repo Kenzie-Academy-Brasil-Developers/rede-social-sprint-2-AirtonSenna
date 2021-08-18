@@ -1,37 +1,44 @@
-/*
-Theme Name: Instagram
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
-/* VARIÁVEIS */
 :root{
-  
+	font-family: Helvetica, Arial, sans-serif;
+	color: #262626;
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+	color: #262626;
+	font-weight: bold;
 }
 
 /*BODY*/
 body{
-
+	width: 935px;
+	margin: auto;
+	background-color: white;
 }
 
 /*TOPO*/
 header{
-	
+	height: 100px;	
+}
+
+header a figure img {
+	width: 150px;
+    margin: 35px 42px;
 }
 
 /*RODAPÉ*/
-footer{
+.footer-nav {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 15px;
+}
 
+.copyright {
+	text-align: center;
+    margin: auto;
+    margin: 40px;
 }
 
 /*PÁGINA INICIAL*/
@@ -39,13 +46,92 @@ main{
 	
 }
 	main .profile-content{
+		display: flex;
+		width: 90%;
+		margin: 25px auto;
+	}
 
+	.profile-photo img {
+		border-radius: 100%;
+		margin: 0 50px;
+	}
+
+	.profile-info  h1 {
+		font-size: 1.7rem;
+		margin: 15px 0;
+	}
+
+	.profile-info  h2 {
+		font-weight: bold;
+    margin-bottom: -6px;
+	}
+
+	.profile-info ul * {
+		line-height: 23px;
+	}
+
+	.profile-info ul li {
+		margin: 10px 0;
+	}
+
+	.profile-data {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: 17px 0;
 	}
 
 	main .highlighted-stories{
+		display: flex; 
+		text-align: center;
+		width: 90%;
+		margin: auto;
+	}
 
+	#stories {
+		display: flex;
+	}
+
+	main .highlighted-stories ul li figure img {
+		border: 1px black solid;
+		border-radius: 100%;
+		padding: 2px;
+		max-height: 71px;
+		max-width: 71px;
+		
+	}
+
+	main .highlighted-stories ul li figure figcaption {
+		font-weight: bold;
 	}
 
 	main .profile-posts{
+		text-align: center;
+	}
 
+	main .profile-posts nav {
+		margin: 40px auto 20px;
+		width: fit-content;
+	}
+
+	#posts {
+		height: 620px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
+	}
+	
+	#posts li {
+		width: 293px;
+		height: 293px;
+	}
+
+	#posts li a figure {
+		width: 293px;
+		height: 293px;
+	}
+
+	#posts li a figure img {
+		width: 293px;
+		height: 293px;
 	}
