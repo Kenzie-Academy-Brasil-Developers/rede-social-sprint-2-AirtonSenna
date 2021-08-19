@@ -23,115 +23,270 @@ header{
 }
 
 header a figure img {
-	width: 150px;
+	width: 230px;
     margin: 35px 42px;
 }
 
 /*RODAPÉ*/
+
+footer {
+	padding-bottom: 60px;
+}
+
+
 .footer-nav {
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    margin-top: 15px;
+	margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+	text-align: center;
+}
+
+.footer-nav a {
+	color: #ACACAC;
 }
 
 .copyright {
 	text-align: center;
-    margin: auto;
-    margin: 40px;
+    margin: 25px auto 7px;
+	color: #ACACAC;
 }
 
+
+
+
+
+
+
+
 /*PÁGINA INICIAL*/
-main{
+
+main .profile-content{
+	display: flex;
+	width: 95%;
+	margin: 25px auto;
+	flex-direction: column;
+}
+
+.profile-photo img {
+	border: 1px lightgray solid;
+	border-radius: 100%;
+	padding: 2px;
+	max-height: 71px;
+	max-width: 71px;
+}
+
+.profile-info h1 {
+	margin: 15px 0;
+	position: absolute;
+	left: 120px;
+	font-size: 2rem;
+	top: 130px;
+}
+
+.profile-info  h2 {
+	font-weight: bold;
+	margin-bottom: -6px;
+	margin-top: 15px;
+}
+
+.profile-info ul * {
+	line-height: 23px;
+	max-width: 80%;
+}
+
+.profile-info ul li {
+	margin: 10px 0;
+}
+
+.profile-data {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 20px 0;
+	border-top: #DCDCDC 1px solid;
+	border-bottom: #DCDCDC 1px solid;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.profile-data p span {
+	font-weight: bold;
+}
+
+main .highlighted-stories{
+	display: flex; 
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	border-bottom: 1px solid #DCDCDC;
+	padding-bottom: 30px;
+}
+
+#stories {
+	display: flex;
+}
+
+main .highlighted-stories ul li figure {
 	
 }
+
+
+main .highlighted-stories ul li figure img {
+	border: 1px lightgray solid;
+	border-radius: 100%;
+	padding: 2px;
+	max-height: 50px;
+	max-width: 50px;
+	
+}
+
+main .highlighted-stories ul li figure figcaption {
+	font-weight: bold;
+}
+
+main .profile-posts{
+	text-align: center;
+}
+
+main .profile-posts nav {
+	margin: auto;
+	width: fit-content;
+	display: flex;
+}
+
+
+
+.article-nav a {
+	display: flex;
+    align-items: center;
+    padding-top: 20px;
+	margin: 0 20px 20px;
+}
+
+#article-nav-first-a {
+	border-top: #262626 1px solid;
+}
+
+
+
+.article-nav a p {
+	display: none;
+}
+
+
+.article-nav a figure img {
+	height: 20px;
+	width: 20px;
+}
+
+#posts {
+	height: 620px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+    justify-content: center;
+
+}
+
+#posts li {
+	width: 293px;
+	height: 293px;
+	margin: 2px;
+}
+
+#posts li a figure {
+	width: 293px;
+	height: 293px;
+}
+
+#posts li a figure img {
+	width: 293px;
+	height: 293px;
+}
+
+/* ---------------------------------------------------------- */
+
+@media only screen and (min-width: 736px) {
+	
 	main .profile-content{
-		display: flex;
+		flex-direction: row;
 		width: 90%;
-		margin: 25px auto;
 	}
 
 	.profile-photo img {
-		border-radius: 100%;
 		margin: 0 50px;
+		padding: 2px;
+		max-height: 100%;
+		max-width: 100%;
 	}
 
-	.profile-info  h1 {
-		font-size: 1.7rem;
-		margin: 15px 0;
-	}
-
-	.profile-info  h2 {
-		font-weight: bold;
-    margin-bottom: -6px;
+	.profile-info {
+		margin-left: 110px;
 	}
 
 	.profile-info ul * {
 		line-height: 23px;
+		max-width: 100%;
 	}
-
-	.profile-info ul li {
-		margin: 10px 0;
+	
+	.profile-info  h1 {
+		font-size: 1.7;
+		position: initial;
+		margin: 0 0 15px;
 	}
 
 	.profile-data {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		margin: 17px 0;
+		text-align: left;
+		padding: 20px 0;
+		border-top: #DCDCDC 1px solid;
+		border-bottom: #DCDCDC 1px solid;
+		margin: 20px auto;
 	}
 
-	main .highlighted-stories{
-		display: flex; 
-		text-align: center;
-		width: 90%;
+	main .highlighted-stories {
 		margin: auto;
 	}
 
-	#stories {
-		display: flex;
+	main .highlighted-stories ul li figure {
+		margin: 0 40px 0 25px;
 	}
 
 	main .highlighted-stories ul li figure img {
-		border: 1px black solid;
-		border-radius: 100%;
-		padding: 2px;
 		max-height: 71px;
 		max-width: 71px;
 		
 	}
 
-	main .highlighted-stories ul li figure figcaption {
-		font-weight: bold;
+
+
+	#article-first-p {
+		color: #262626;
+		
 	}
 
-	main .profile-posts{
-		text-align: center;
+	.article-nav a p {
+		display: block;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 0.8rem;
+		color: #DCDCDC;
 	}
 
-	main .profile-posts nav {
-		margin: 40px auto 20px;
-		width: fit-content;
+	.article-nav a figure img {
+		height: 12px;
+		width: 12px;
+		margin-right: 10px;
 	}
+
 
 	#posts {
-		height: 620px;
-		display: flex;
-		flex-wrap: wrap;
+		align-content: normal;
 		justify-content: space-evenly;
-
 	}
-	
+
 	#posts li {
-		width: 293px;
-		height: 293px;
+		margin: 0;
 	}
 
-	#posts li a figure {
-		width: 293px;
-		height: 293px;
-	}
-
-	#posts li a figure img {
-		width: 293px;
-		height: 293px;
-	}
+}
